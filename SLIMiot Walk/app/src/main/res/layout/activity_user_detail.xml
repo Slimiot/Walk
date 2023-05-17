@@ -183,7 +183,7 @@
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/text_size"
                 android:textStyle="bold"
-                android:text="App needs data from sensor in service UUID 1816 characteristics 2713"/>
+                android:text="App needs data from sensor in service UUID 1816 characteristics 2713 \n\nTwo byte value - with first byte as 2 (indicating steps), second byte for each step."/>
 
         </LinearLayout>
 
