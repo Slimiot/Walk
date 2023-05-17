@@ -170,11 +170,12 @@ public class UserDetail extends AppCompatActivity {
         weightUnit = sharedPreferences.getString("weightUnit",null);
         heightUnit = sharedPreferences.getString("heightUnit",null);
 //        Log.i("screen_u",sharedPreferences.getString("weight",null));
-        absWeight =  Double.parseDouble(sharedPreferences.getString("weight",null));
-        absHeight =  Double.parseDouble(sharedPreferences.getString("height",null));
+
+
 
 
         if(heightUnit!=null) {
+            absHeight =  Double.parseDouble(sharedPreferences.getString("height",null));
             if (heightUnit.equals("Centimeters")) {
                 intAbsHeight = (int) absHeight;
 //                heightM=absHeight/100;
@@ -194,6 +195,7 @@ public class UserDetail extends AppCompatActivity {
             }
         }
         if(weightUnit!=null) {
+            absWeight =  Double.parseDouble(sharedPreferences.getString("weight",null));
             if (weightUnit.equals("Kilograms")) {
                 if(absWeight!=0.0) {
 //                    massKg = absWeight;
